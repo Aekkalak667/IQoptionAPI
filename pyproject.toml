@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iq-option-nexus-api"
+version = "1.2.1"
+authors = [
+  { name="Aekkalak", email="aekkalak@example.com" },
+]
+description = "A high-performance IQ Option API wrapper."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "websockets",
+    "requests",
+    "python-dotenv",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Aekkalak/iq-option-nexus-api"
+
+[tool.setuptools.packages.find]
+where = ["src"]
